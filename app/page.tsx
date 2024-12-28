@@ -13,12 +13,13 @@ const Home = () => {
     return (
         <main>
             {/* <Image src={tech} width="600" alt="Tech Background" /> */}
+            <h1 className="starter-text">
+                Stack Bot
+            </h1>
             <section className={noMessages ? "" : "populated"}>
                 {noMessages ? (
                     <>
-                        <h1 className="starter-text">
-                            Stack Bot
-                        </h1>
+                        
                         <br/>
                         {/* <PromptSuggestionRow/> */}
                     </>
@@ -36,6 +37,7 @@ const Home = () => {
                     value={input}
                     placeholder="Ask me something..."
                 />
+                <input type="submit"/>
             </form>
         </main>
     )

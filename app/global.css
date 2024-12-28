@@ -58,4 +58,13 @@ input.question-box {
 
 input[type=submit] {
     width: 15%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    background-color: #411b89;
+}
+
+input:focus {
+    outline: none;
 }
