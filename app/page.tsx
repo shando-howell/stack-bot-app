@@ -1,18 +1,28 @@
 "use client"
 
-import Image from "next/image";
-import tech from "./assets/tech.jpg";
 import { useChat } from "ai/react";
 import { Message } from "ai";
+
+import Bubble from "./components/Bubble";
+import PromptSuggestionRow from "./components/PromptSuggestionRow";
+import LoadingBubble from "./components/LoadingBubble";
 
 const Home = () => {
     const { append, isLoading, messages, input, handleInputChange, handleSubmit } = useChat()
 
-    const noMessages = false
+    const noMessages = !messages || messages.length === 0;
+
+    const handlePrompt = ( promptText: any ) => {
+        const msg: Message = {
+            id: crypto.randomUUID(),
+            content: promptText,
+            role: "user"
+        }
+        append(msg)
+    }
 
     return (
         <main>
-            {/* <Image src={tech} width="600" alt="Tech Background" /> */}
             <h1 className="starter-text">
                 Stack Bot
             </h1>
@@ -21,12 +31,12 @@ const Home = () => {
                     <>
                         
                         <br/>
-                        {/* <PromptSuggestionRow/> */}
+                        <PromptSuggestionRow onPromptClick={handlePrompt}/>
                     </>
                 ) : (
                     <>
-                        {/* map messages to text bubbles */}
-                        {/* <LoadingBubble /> */}
+                        {messages.map((message, index) => <Bubble key={`message-${index}`} message={message}/>)}
+                        {isLoading && <LoadingBubble />}
                     </>
                 )}
             </section>
