@@ -9,11 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("assets//tech.jpg");
+    background-image: url("assets//home.jpg");
 }
 
 main {
-    width: 70vw;
+    width: 75vw;
     height: 70vh;
     background: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
     border-radius: 15px;
@@ -32,6 +32,10 @@ section.populated {
     flex-direction: column;
     justify-content: flex-end;
     overflow: scroll;
+}
+
+.conversation-block {
+    overflow-y: scroll;
 }
 
 .starter-text {
@@ -93,7 +97,6 @@ input:focus {
     border-radius: 20px 20px 20px 0;
     background-color: #06bd40;
     color: antiquewhite;
-    width: 30%;
     margin-bottom: 6px;
 }
 

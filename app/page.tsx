@@ -29,15 +29,14 @@ const Home = () => {
             <section className={noMessages ? "" : "populated"}>
                 {noMessages ? (
                     <>
-                        
                         <br/>
                         <PromptSuggestionRow onPromptClick={handlePrompt}/>
                     </>
                 ) : (
-                    <>
+                    <div className="conversation-block">
                         {messages.map((message, index) => <Bubble key={`message-${index}`} message={message}/>)}
                         {isLoading && <LoadingBubble />}
-                    </>
+                    </div>
                 )}
             </section>
             <form onSubmit={handleSubmit}>
