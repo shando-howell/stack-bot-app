@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("assets//home.jpg");
+    background: no-repeat center/105% url("assets//home.jpg");
 }
 
 main {
