@@ -115,6 +115,12 @@ input:focus {
     box-shadow: #959da533 0 8px 24px;
 }
 
+.footer {
+    color: grey;
+    padding: 4px;
+    margin-top: 20px;
+}
+
 .loader {
     margin: 10px;
     width: 60px;

@@ -48,6 +48,7 @@ const Home = () => {
                 />
                 <input type="submit"/>
             </form>
+            <span className="footer">Stack Bot &copy; 2024</span>
         </main>
     )
 }
