@@ -2,9 +2,9 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick}) => {
     const prompts =[
-        "How is the useContext hook used in React?",
+        "What is server-side rendering in Next.js?",
         "How is the useReducer hook used in React?",
-        "What are the most useful hooks in Next.js",
+        "How do you simulate multi-thread processing in Node.js?",
         "What are the most useful middleware functions in Express.js?"
     ]
     return (
