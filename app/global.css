@@ -40,7 +40,7 @@ section.populated {
 
 .starter-text {
     padding: 0 80px;
-    color:rgb(21, 161, 241);
+    color: grey;
 }
 
 form {
@@ -67,7 +67,7 @@ input[type=submit] {
     font-size: 15px;
     border: none;
     color: #fff;
-    background-color: #06bd40;
+    background-color: rgb(37, 132, 249);
 }
 
 input:focus {
@@ -87,7 +87,7 @@ input:focus {
 
 .assistant-bubble {
     border-radius: 20px 20px 0 20px;
-    background-color: rgb(21, 161, 241);
+    background-color: #02a837;
     margin-left: auto;
     color:antiquewhite;
     margin-bottom: 6px;
@@ -95,7 +95,7 @@ input:focus {
 
 .user-bubble {
     border-radius: 20px 20px 20px 0;
-    background-color: #06bd40;
+    background-color: rgb(37, 132, 249);
     color: antiquewhite;
     margin-bottom: 6px;
 }

@@ -23,6 +23,7 @@ const stackData = [
     'https://react.dev',
     'https://nodejs.org/docs/latest/api/',
     'https://expressjs.com/en/4x/api.html',
+    'https://jestjs.io/docs/api'
 ]
 
 const client = new DataAPIClient(ASTRA_DB_APPLICATION_TOKEN)
